@@ -7,8 +7,12 @@ function navigatePage(page){
   }
 }
 
+
 Page({
   onTabsChange(e){
     navigatePage(e.detail.value);
+  },
+  onTabsClick(e){
+    console.log("Clicked");
   }
 });

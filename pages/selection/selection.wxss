@@ -1,5 +1,9 @@
-.tab-text{
+.t-tabs__item{
+  font-weight: 600 !important;
   color:black !important;
+}
+.t-tabs__item--top, .t-tabs__item--bottom{
+  height:var(--td-tab-item-height, 50rpx) !important;
 }
 
 

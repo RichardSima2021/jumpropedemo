@@ -10,7 +10,7 @@
 
     <t-tab-panel class="tab-text" label="跳绳" value="0">
       <h1 class="comps">所有比赛</h1>
-      <t-row class="dark" >1</t-row>
+      <t-row class="dark">1</t-row>
       <t-row class="light">2</t-row>
       <t-row class="dark" >3</t-row>
       <t-row class="dark" >4</t-row>
