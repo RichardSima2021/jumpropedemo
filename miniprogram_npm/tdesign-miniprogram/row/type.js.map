@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/row/type.ts"],"names":[],"mappings":"AAAA,oBAAoB","file":"type.js","sourcesContent":["/* eslint-disable */\r\n\r\n/**\r\n * 该文件为脚本自动生成文件，请勿随意修改。如需修改请联系 PMC\r\n * */\r\n\r\nexport interface TdRowProps {\r\n  /**\r\n   * 列之间的间距（默认单位px）\r\n   */\r\n  gutter?: {\r\n    type: null;\r\n    value?: string | number;\r\n  };\r\n}\r\n"]}

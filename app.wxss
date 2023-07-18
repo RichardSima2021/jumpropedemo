@@ -1,0 +1,7 @@
+page {
+  background: #f6f6f6;
+  
+}
+.demo {
+  padding-bottom: 56rpx;
+}

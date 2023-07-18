@@ -1,0 +1,23 @@
+
+<view class="demo">
+<div class = "selection">
+  <t-tabs class="custom-tabs" defaultValue="{{0}}" bind:change="onTabsChange"   bind:click="onTabsClick" >
+
+    <t-tab-panel label="跳绳" value="0">
+      <h1 class="comps">所有比赛</h1>
+      <t-row class="dark" >1</t-row>
+      <t-row class="dark" >2</t-row>
+      <t-row class="dark" >3</t-row>
+      <t-row class="dark" >4</t-row>
+    </t-tab-panel>
+
+    <t-tab-panel label="足球" value="1" />
+
+
+  </t-tabs>
+</div>
+  
+<view class="demo">
+
+</view>
+</view>

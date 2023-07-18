@@ -1,0 +1,38 @@
+/* page {
+  background-color: #fff;
+} */
+
+.dark {
+  background-color: #0052d9 !important;
+}
+
+.light {
+  background-color: #366ef4;
+}
+
+.comps{
+  font-weight: bold;
+  font-size: large;
+  margin-top: 60rpx;
+  margin-left: 32rpx;
+}
+
+.dark,
+.light {
+  background-clip: content-box;
+  color: #fff;
+  font-size: 50rpx;
+  line-height: 300rpx;
+  margin-bottom: 32rpx;
+  margin: 32rpx;
+  text-align: center;
+}
+
+/* .custom-tabs {
+  --td-button-primary-bg-color: yellowgreen !important;
+  margin-bottom: 32rpx !important;
+}
+
+.custom-panel {
+  height: 120px !important;
+} */
