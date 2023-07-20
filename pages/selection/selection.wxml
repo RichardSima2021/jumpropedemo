@@ -7,7 +7,7 @@
 </template> -->
 
 <view class="demo">
-<div class = "selection">
+<view class = "selection">
   <t-tabs
   class="custom-tabs" 
   defaultValue="{{0}}" 
@@ -35,7 +35,10 @@
         </view>
     </t-row>
     
-    <t-divider content="文字信息" />
+    <view>
+        <t-divider content="没有更多了" />
+    </view>
+    
 
     </t-tab-panel>
 
@@ -44,6 +47,6 @@
 
 
   </t-tabs>
-</div>
+</view>
 
 </view>
