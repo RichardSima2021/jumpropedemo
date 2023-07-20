@@ -7,20 +7,16 @@
 </template> -->
 
 <view class="demo">
-<view class = "selection">
-  <t-tabs
-  class="custom-tabs" 
-  defaultValue="{{0}}" 
-  bind:change="onTabsChange"   
-  >
+    <view class = "contentBox">
+    <t-tabs
+    class="custom-tabs" 
+    defaultValue="{{0}}" 
+    bind:change="onTabsChange"   
+    >
 
     <t-tab-panel class="tab-text" label="跳绳" value="0">
-      <h1 class="comps">所有比赛</h1>
-      <!-- <t-row class="event" bindtap="onEventClick">1</t-row>
-      <t-row class="event">2</t-row>
-      <t-row class="event">3</t-row>
-      <t-row class="event">4</t-row> -->
-      <t-row wx:for="{{events}}" wx:for-item="itemName" class="event" bindtap="onEventClick">
+    <h1 class="comps">所有比赛</h1>
+    <t-row wx:for="{{events}}" wx:for-item="itemName" class="event" bindtap="onEventClick">
         <view class="eventTitle">
             <text>eventName</text>
             <!-- <text>{{itemName}}</text> -->
@@ -46,7 +42,7 @@
 
 
 
-  </t-tabs>
-</view>
+    </t-tabs>
+    </view>
 
 </view>

@@ -1,3 +1,11 @@
+.contentBox{
+    margin: 50rpx;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    border-radius: 10px;
+}
+
 .t-tabs__item{
   font-weight: 600 !important;
   color:black !important;
@@ -37,8 +45,9 @@
     color: #fff;
     line-height: 150rpx;
     margin: 32rpx;
-    border-style: solid;
+    /* Why does hidden border work here?? */
+    border-style: hidden;
     border: 5px;
-    border-color: rgb(170, 255, 0);
+    /* border-color: rgb(170, 255, 0); */
     border-radius: 10px;
 }

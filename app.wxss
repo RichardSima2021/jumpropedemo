@@ -1,5 +1,5 @@
 page {
-  background: #f6f6f6;
+  background: #dba8f8ce;
   --td-brand-color: rgb(170, 255, 0);
 }
 .demo {
