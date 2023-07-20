@@ -1,8 +1,13 @@
+.navBar{
+    /* opacity: 0; */
+}
+
 .contentBox{
     margin: 50rpx;
     border-style: solid;
     border-color: white;
-    border-width: 10px;
+    border-width: 10px; 
+    /* weird clipping issue if width is not set to 10 exactly */
     border-radius: 10px;
 }
 

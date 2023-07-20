@@ -6,34 +6,45 @@
     </view>
 </template> -->
 
+
+
 <view class="demo">
+    <view class="navBar">
+        <t-navbar 
+            title="未来运动场" 
+        />
+    </view>
     <view class = "contentBox">
     <t-tabs
-    class="custom-tabs" 
-    defaultValue="{{0}}" 
-    bind:change="onTabsChange"   
+        class="custom-tabs" 
+        defaultValue="{{0}}" 
+        bind:change="onTabsChange"   
     >
 
     <t-tab-panel class="tab-text" label="跳绳" value="0">
-    <h1 class="comps">所有比赛</h1>
-    <t-row wx:for="{{events}}" wx:for-item="itemName" class="event" bindtap="onEventClick">
-        <view class="eventTitle">
-            <text>eventName</text>
-            <!-- <text>{{itemName}}</text> -->
-        </view>
-        <view class="eventDate">
-            <text>{{itemName.date}}</text>
-        </view>
-        <view class="detailButton">
-            <t-button size="small" style="vertical-align: bottom; margin-bottom: 40rpx;">
-                查看详情
-            </t-button>
-        </view>
-    </t-row>
     
     <view>
-        <t-divider content="没有更多了" />
+        <text class="comps">所有比赛</text>
+        <t-row wx:for="{{events}}" wx:for-item="itemName" class="event" bindtap="onEventClick">
+            <view class="eventTitle">
+                <text>eventName</text>
+                <!-- <text>{{itemName}}</text> -->
+            </view>
+            <view class="eventDate">
+                <text>{{itemName.date}}</text>
+            </view>
+            <view class="detailButton">
+                <t-button size="small" style="vertical-align: bottom; margin-bottom: 40rpx;">
+                    查看详情
+                </t-button>
+            </view>
+        </t-row>
+        
+        <view>
+            <t-divider content="没有更多了" />
+        </view>
     </view>
+    
     
 
     </t-tab-panel>
