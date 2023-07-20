@@ -6,14 +6,22 @@
   height:var(--td-tab-item-height, 50rpx) !important;
 }
 
-
-
-.dark {
-  background-color: #0052d9;
+.eventTitle{
+    margin-left: 40rpx;
+    /* margin-bottom: 5rpx; */
+    font-size: 50rpx;
+    height: 100rpx; 
 }
 
-.light {
-  background-color: #366ef4;
+.eventDate{
+    margin-left: 40rpx;
+    font-size: 35rpx;
+}
+
+.detailButton{
+    vertical-align: bottom;
+    height: 0%;
+    margin-left: 40rpx;
 }
 
 .comps{
@@ -23,19 +31,14 @@
   margin-left: 32rpx;
 }
 
-.dark,
-.light {
-  background-clip: content-box;
-  color: #fff;
-  font-size: 50rpx;
-  line-height: 300rpx;
-  margin-bottom: 32rpx;
-  margin: 32rpx;
-  text-align: center;
+.event {
+    background-color: #366ef4;
+    background-clip: content-box;
+    color: #fff;
+    line-height: 150rpx;
+    margin: 32rpx;
+    border-style: solid;
+    border: 5px;
+    border-color: rgb(170, 255, 0);
+    border-radius: 10px;
 }
-
-
-
-/* .custom-panel {
-  height: 120px !important;
-} */

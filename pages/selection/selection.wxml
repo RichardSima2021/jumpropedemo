@@ -1,22 +1,46 @@
+<!-- in app.json do "navigationStyle": "custom" to do stuff to navbar-->
+<!-- <template name="eventBox">
+    <view>
+        <text>{{eventName}}</text>
+        <text>{{eventDates}}</text>
+    </view>
+</template> -->
 
 <view class="demo">
 <div class = "selection">
-  <t-tabs 
+  <t-tabs
   class="custom-tabs" 
   defaultValue="{{0}}" 
   bind:change="onTabsChange"   
-  bind:click="onTabsClick" 
   >
 
     <t-tab-panel class="tab-text" label="跳绳" value="0">
       <h1 class="comps">所有比赛</h1>
-      <t-row class="dark">1</t-row>
-      <t-row class="light">2</t-row>
-      <t-row class="dark" >3</t-row>
-      <t-row class="dark" >4</t-row>
+      <!-- <t-row class="event" bindtap="onEventClick">1</t-row>
+      <t-row class="event">2</t-row>
+      <t-row class="event">3</t-row>
+      <t-row class="event">4</t-row> -->
+      <t-row wx:for="{{events}}" wx:for-item="itemName" class="event" bindtap="onEventClick">
+        <view class="eventTitle">
+            <text>eventName</text>
+            <!-- <text>{{itemName}}</text> -->
+        </view>
+        <view class="eventDate">
+            <text>{{itemName.date}}</text>
+        </view>
+        <view class="detailButton">
+            <t-button size="small" style="vertical-align: bottom; margin-bottom: 40rpx;">
+                查看详情
+            </t-button>
+        </view>
+    </t-row>
+    
+    <t-divider content="文字信息" />
+
     </t-tab-panel>
 
     <t-tab-panel class="tab-text" label="足球" value="1" />
+
 
 
   </t-tabs>
