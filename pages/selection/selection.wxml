@@ -8,12 +8,13 @@
 
 
 
-<view class="demo">
-    <view class="navBar">
-        <t-navbar 
-            title="未来运动场" 
-        />
-    </view>
+<gradient-navbar title="未来运动场" >
+    </gradient-navbar>
+
+
+
+<scroll-view class="demo">
+    
     <view class = "contentBox">
     <t-tabs
         class="custom-tabs" 
@@ -32,7 +33,7 @@
             </view>
             <view class="eventDate">
                 <text>{{itemName.date}}</text>
-            </view>
+        </view>
             <view class="detailButton">
                 <t-button size="small" style="vertical-align: bottom; margin-bottom: 40rpx;">
                     查看详情
@@ -55,5 +56,4 @@
 
     </t-tabs>
     </view>
-
-</view>
+</scroll-view>

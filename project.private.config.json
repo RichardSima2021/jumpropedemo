@@ -2,5 +2,6 @@
     "projectname": "jumpropedemo",
     "setting": {
         "compileHotReLoad": true
-    }
+    },
+    "libVersion": "2.33.0"
 }

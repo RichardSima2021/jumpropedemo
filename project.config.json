@@ -22,6 +22,9 @@
         "enhance": false,
         "useCompilerModule": true,
         "userConfirmedUseCompilerModuleSwitch": false,
+        "useCompilerPlugins": [
+            "typescript"
+        ],
         "showShadowRootInWxmlPanel": true,
         "babelSetting": {
             "ignore": [],

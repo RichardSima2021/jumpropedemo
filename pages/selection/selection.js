@@ -14,7 +14,9 @@ Page({
             {"eventName:":"event2","date":"2start-2end"},
             {"eventName:":"event3","date":"3start-3end"},
             {"eventName:":"event3","date":"4start-4end"}
-        ]
+        ],
+        text: "Hello",
+        scrollDist:String
     },
     onTabsChange(e){
         navigatePage(e.detail.value);
@@ -24,6 +26,15 @@ Page({
     },
     onEventClick(e){
         console.log("Event clicked")
+    },
+    onPageScroll(e){
+        // console.log(e.scrollTop)
+        // threshold = 80
+        // console.log(e.scrollTop/80)
+        // this.setData({scrollDist: e.scrollTop.toString()}) //能用，但为什么不用？
+
+
+        console.log(e.scrollTop.toString())
     }
 }
 
