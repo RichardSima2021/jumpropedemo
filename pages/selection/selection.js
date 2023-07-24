@@ -29,7 +29,7 @@ Page({
     },
     onPageScroll(e){
         // console.log(e.scrollTop)
-        threshold = 80
+        // threshold = 80
         // console.log(e.scrollTop/80)
         // this.setData({scrollDist: e.scrollTop.toString()}) //能用，但为什么不用？
 
