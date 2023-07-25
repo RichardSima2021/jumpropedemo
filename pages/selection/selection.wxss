@@ -8,7 +8,7 @@
     border-color: white;
     border-width: 10rpx; 
     /* weird clipping issue if width is not set to 10 exactly */
-    border-radius: 10rpx;
+    border-radius: 25rpx;
 }
 
 .t-tabs__item{
@@ -54,5 +54,5 @@
     border-style: hidden;
     border: 5rpx;
     /* border-color: rgb(170, 255, 0); */
-    border-radius: 10rpx;
+    border-radius: 15rpx;
 }

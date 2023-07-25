@@ -10,9 +10,7 @@
     "t-navbar": "tdesign-miniprogram/navbar/navbar",
     "gradient-navbar":"/components/gradient_navbar/gradient_navbar",
     "t-pull-down-refresh": "tdesign-miniprogram/pull-down-refresh/pull-down-refresh"
-  },
-  "window": {
-      "enablePullDownRefresh": true
   }
+  
 
 }
