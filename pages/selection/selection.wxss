@@ -6,9 +6,9 @@
     margin: 50rpx;
     border-style: solid;
     border-color: white;
-    border-width: 10px; 
+    border-width: 10rpx; 
     /* weird clipping issue if width is not set to 10 exactly */
-    border-radius: 10px;
+    border-radius: 10rpx;
 }
 
 .t-tabs__item{
@@ -52,7 +52,7 @@
     margin: 32rpx;
     /* Why does hidden border work here?? */
     border-style: hidden;
-    border: 5px;
+    border: 5rpx;
     /* border-color: rgb(170, 255, 0); */
-    border-radius: 10px;
+    border-radius: 10rpx;
 }
