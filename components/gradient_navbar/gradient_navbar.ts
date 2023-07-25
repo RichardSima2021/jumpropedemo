@@ -2,20 +2,28 @@
 Component({
   properties:{
     title:String,
-    scroll:String
+    scrollDist:Number
   },
   methods:{
     onPageScroll(e){
+        if(e <= 20){
+            this.setData({text:""});
+        }
+        else{
+            if(this.data.scrollDist < 20){
+                this.setData({text:"未来运动场"});
+            }
+        }
         if(this.data.opacity <= 1 && e >= 80){
             this.setData({
-                text:"1.00",
+                // text:"1.00",
                 opacity:1.00
             });
         }
         else{
             let opacityPercentage = e/80;
             this.setData({
-                text: opacityPercentage.toFixed(2).toString(), 
+                // text: opacityPercentage.toFixed(2).toString(), 
                 opacity: opacityPercentage
             });
             // console.log("text",this.data.text);
@@ -24,7 +32,7 @@ Component({
     }
 },
   data:{
-    text: "0.00",
+    text: "",
     opacity: 0.00
   },
   options:{
