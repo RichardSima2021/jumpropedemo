@@ -29,9 +29,8 @@ Page({
     },
     onPageScroll(e){
         let navBarComponent = this.selectComponent("#navbar");
-        // console.log(e.scrollTop);
-        // console.log(navBarComponent);
-        navBarComponent.onPageScroll(e.scrollTop);
+        let distanceToTop = e.scrollTop;
+        navBarComponent.onPageScroll(distanceToTop);
     }
 }
 

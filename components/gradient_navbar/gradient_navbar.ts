@@ -6,17 +6,20 @@ Component({
   },
   methods:{
     onPageScroll(e){
-        let opacityPercentage = e/80;
-        // console.log(opacityPercentage.toFixed(2).toString());
-
-        if(opacityPercentage <= 1){
-            // console.log("debug");
+        if(this.data.opacity <= 1 && e >= 80){
+            this.setData({
+                text:"1.00",
+                opacity:1.00
+            });
+        }
+        else{
+            let opacityPercentage = e/80;
             this.setData({
                 text: opacityPercentage.toFixed(2).toString(), 
                 opacity: opacityPercentage
             });
-            console.log("text",this.data.text);
-            console.log("opacity",this.data.opacity);
+            // console.log("text",this.data.text);
+            // console.log("opacity",this.data.opacity);
         }
     }
 },
