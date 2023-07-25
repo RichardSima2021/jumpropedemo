@@ -20,13 +20,15 @@ Page({
             {"eventName":"event8","date":"8start-8end"},
             {"eventName":"event9","date":"9start-9end"}
         ],
+        eventsCache:[
+
+        ],
         text: "Hello",
         scrollDist:String,
         enable: false,
         loadingProps:{size:'50rpx'},
         noMoreContent: false,
-        defaultEventListSize: 4,
-        currentEventListSize: 4
+        defaultEventListSize: 4 // loads new events 4 at a time
     },
     onTabsChange(e){
         navigatePage(e.detail.value);
@@ -48,11 +50,15 @@ Page({
     },
     onReachBottom(){
         console.log("bottom");
+        let currentEventCacheSize = Object.keys(this.data.eventsCache).length;
+        let dbEventListSize = Object.keys(this.data.fakeDB).length;
         // console.log(Object.keys(this.data.fakeDB).length)
-        if(this.data.currentEventListSize < Object.keys(this.data.fakeDB).length){
-            console.log("no more data");
-            this.data.currentEventListSize += this.data.defaultEventListSize;
-            this.data.noMoreContent = (this.data.currentEventListSize >= this.data.defaultEventListSize);
+        if(currentEventCacheSize < dbEventListSize){
+            console.log("more data to load");
+            // load more data from fake DB up to 4 max
+        }
+        else{
+            self.setData({noMoreContent:true});
         }
     }
 }
