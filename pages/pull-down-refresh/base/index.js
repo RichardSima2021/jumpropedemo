@@ -13,9 +13,10 @@ Component({
 
   methods: {
     onPullDownRefresh() {
-      setTimeout(() => {
-        this.setData({ 'baseRefresh.value': false });
-      }, 1500);
+        console.log("test");
+        setTimeout(() => {
+            this.setData({ 'baseRefresh.value': false });
+        }, 1500);
     },
     onScroll(e) {
       const { scrollTop } = e.detail;

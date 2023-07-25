@@ -1,51 +1,47 @@
-<!-- in app.json do "navigationStyle": "custom" to do stuff to navbar-->
-
-<gradient-navbar title="未来运动场" id="navbar">
-    </gradient-navbar>
+<gradient-navbar title="未来运动场" id="navbar"></gradient-navbar>
 
 
-
-<scroll-view class="demo" throttle="{{false}}">
-    
-    <view class = "contentBox">
+<view class = "contentBox" throttle="{{false}}">
     <t-tabs
         class="custom-tabs" 
         defaultValue="{{0}}" 
         bind:change="onTabsChange"   
     >
-
-    <t-tab-panel class="tab-text" label="跳绳" value="0">
-    
-    <view>
-        <text class="comps">所有比赛</text>
-        <t-row wx:for="{{events}}" wx:for-item="itemName" class="event" bindtap="onEventClick">
-            <view class="eventTitle">
-                <text>eventName</text>
-                <!-- <text>{{itemName}}</text> -->
-            </view>
-            <view class="eventDate">
-                <text>{{itemName.date}}</text>
-        </view>
-            <view class="detailButton">
-                <t-button size="small" style="vertical-align: bottom; margin-bottom: 40rpx;">
-                    查看详情
-                </t-button>
-            </view>
-        </t-row>
+        <t-tab-panel class="tab-text" label="跳绳" value="0">
+            <t-pull-down-refresh
+                value="{{enable}}"
+                loadingProps="{{loadingProps}}"
+                loadingTexts="{{['下拉刷新', '松手刷新', '正在刷新', '刷新完成']}}"
+                bind:refresh="onRefresh"
+                >
+            <scroll-view id="eventsView">
+                <text class="comps">所有比赛</text>
+                <t-row wx:for="{{events}}" wx:for-item="itemName" class="event" bindtap="onEventClick">
+                    <view class="eventTitle">
+                        <text>{{itemName.eventName}}</text>
+                    </view>
+                    <view class="eventDate">
+                        <text>{{itemName.date}}</text>
+                    </view>
+                    <view class="detailButton">
+                        <t-button size="small" style="vertical-align: bottom; margin-bottom: 40rpx;">
+                            查看详情
+                        </t-button>
+                    </view>
+                </t-row>
+                
+                <view>
+                    <t-divider content="没有更多了" />
+                </view>
+            </scroll-view>
+            </t-pull-down-refresh>
         
-        <view>
-            <t-divider content="没有更多了" />
-        </view>
-    </view>
-    
-    
 
-    </t-tab-panel>
+        </t-tab-panel>
 
-    <t-tab-panel class="tab-text" label="足球" value="1" />
+        <t-tab-panel class="tab-text" label="足球" value="1" />
 
 
 
     </t-tabs>
-    </view>
-</scroll-view>
+</view>

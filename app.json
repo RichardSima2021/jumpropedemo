@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/selection/selection",
+    "pages/pull-down-refresh/pull-down-refresh",
     "pages/home/home",
     "pages/button/button",
     "pages/tabs/tabs",
@@ -31,7 +32,6 @@
     "pages/steps/steps",
     "pages/dropdown-menu/dropdown-menu",
     "pages/drawer/drawer",
-    "pages/pull-down-refresh/pull-down-refresh",
     "pages/skeleton/skeleton",
     "pages/footer/footer",
     "pages/divider/divider",
