@@ -1,14 +1,6 @@
 <!-- in app.json do "navigationStyle": "custom" to do stuff to navbar-->
-<!-- <template name="eventBox">
-    <view>
-        <text>{{eventName}}</text>
-        <text>{{eventDates}}</text>
-    </view>
-</template> -->
 
-
-
-<gradient-navbar title="未来运动场" >
+<gradient-navbar title="未来运动场" id="navbar">
     </gradient-navbar>
 
 

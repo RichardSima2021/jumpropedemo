@@ -1,1 +1,3 @@
-<t-navbar title="{{scroll}}"> </t-navbar>
+<t-navbar title="{{text}}" 
+          custom-style="--td-navbar-bg-color: rgba(255,255,255,{{opacity}});"
+> </t-navbar>
