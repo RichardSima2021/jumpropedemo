@@ -48,7 +48,7 @@
     background-color: #366ef4;
     background-clip: content-box;
     color: #fff;
-    line-height: 150rpx;
+    line-height: 100rpx;
     margin: 32rpx;
     /* Why does hidden border work here?? */
     border-style: hidden;

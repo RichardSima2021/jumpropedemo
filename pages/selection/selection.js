@@ -37,6 +37,9 @@ Page({
     onRefresh(){
         this.setData({enable:true});
         setTimeout(()=> {this.setData({enable:false});},1500)
+    },
+    onReachBottom(){
+        console.log("bottom");
     }
 }
 
