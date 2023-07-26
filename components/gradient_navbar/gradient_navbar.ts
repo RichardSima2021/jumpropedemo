@@ -41,7 +41,7 @@ Component({
   lifetimes:{
       attached(){
           let currentPage = getCurrentPages().slice(-1);
-          console.log("attached")
+        //   console.log("attached")
       }
   }
 })

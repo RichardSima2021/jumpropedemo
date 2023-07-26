@@ -16,7 +16,7 @@
                 >
             <scroll-view id="eventsView">
                 <text class="comps">所有比赛</text>
-                <t-row wx:for="{{fakeDB}}" wx:for-item="itemName" class="event" bindtap="onEventClick">
+                <t-row wx:for="{{eventsCache}}" wx:for-item="itemName" class="event" bindtap="onEventClick">
                     <view class="eventTitle">
                         <text>{{itemName.eventName}}</text>
                     </view>
