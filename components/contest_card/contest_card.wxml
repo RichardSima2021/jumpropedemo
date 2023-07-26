@@ -1,0 +1,15 @@
+<!--components/contest_card.wxml-->
+<view class="contestCardWrapper" bindtap="onClick">
+
+  <view class="title">
+    <text>{{eventTitle}}</text>
+  </view>
+
+  <view class="date">
+    <text>{{eventDate}}</text>
+  </view>
+  
+  <view class="details">
+    <t-button size="extra-small">查看详情</t-button>
+  </view>
+</view>

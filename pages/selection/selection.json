@@ -9,7 +9,8 @@
     "t-divider": "tdesign-miniprogram/divider/divider",
     "t-navbar": "tdesign-miniprogram/navbar/navbar",
     "gradient-navbar":"/components/gradient_navbar/gradient_navbar",
-    "t-pull-down-refresh": "tdesign-miniprogram/pull-down-refresh/pull-down-refresh"
+    "t-pull-down-refresh": "tdesign-miniprogram/pull-down-refresh/pull-down-refresh",
+    "contest-card":"/components/contest_card/contest_card"
   }
   
 

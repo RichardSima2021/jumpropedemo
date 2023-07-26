@@ -37,7 +37,7 @@ Page({
         console.log("Clicked");
     },
     onEventClick(e){
-        console.log("Event clicked");
+        // console.log(e);
     },
     onPageScroll(e){
         let navBarComponent = this.selectComponent("#navbar");

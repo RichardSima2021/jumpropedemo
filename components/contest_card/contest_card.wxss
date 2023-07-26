@@ -1,0 +1,29 @@
+/* components/contest_card.wxss */
+.contestCardWrapper{
+  margin: 32rpx;
+  background-color:#366ef4;
+  color:  #ffffff;
+  padding-left: 40rpx;
+  padding-top: 40rpx;
+  border-style:hidden;
+  border-radius: 15rpx;
+}
+
+.title{
+  margin-bottom:20rpx;
+    /* margin-bottom: 5rpx; */
+  font-size: 50rpx;
+}
+
+.date{
+  margin-bottom: 80rpx;
+}
+
+.details{
+  padding-bottom: 40rpx;
+  /* width: 250rpx; */
+  --td-button-extra-small-font-size: 20rpx;
+  --td-button-font-weight: 400;
+  /* height: 0%; */
+  /* height: 45rpx; */
+}

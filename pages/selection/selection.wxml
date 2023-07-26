@@ -16,19 +16,8 @@
                 >
             <scroll-view id="eventsView">
                 <text class="comps">所有比赛</text>
-                <t-row wx:for="{{eventsCache}}" wx:for-item="itemName" class="event" bindtap="onEventClick">
-                    <view class="eventTitle">
-                        <text>{{itemName.eventName}}</text>
-                    </view>
-                    <view class="eventDate">
-                        <text>{{itemName.date}}</text>
-                    </view>
-                    <view class="detailButton">
-                        <t-button size="small" style="vertical-align: bottom; margin-bottom: 40rpx;">
-                            查看详情
-                        </t-button>
-                    </view>
-                </t-row>
+                <!-- <contest-card eventTitle="test" eventDate="testDate"></contest-card> -->
+                <contest-card wx:for="{{eventsCache}}" wx:for-item="itemName" eventTitle="{{itemName.eventName}}" eventDate="{{itemName.date}}"></contest-card>
                 
                 <view wx:if="{{noMoreContent}}">
                     <t-divider content="没有更多了" />
