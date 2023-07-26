@@ -10,7 +10,9 @@
     "t-navbar": "tdesign-miniprogram/navbar/navbar",
     "gradient-navbar":"/components/gradient_navbar/gradient_navbar",
     "t-pull-down-refresh": "tdesign-miniprogram/pull-down-refresh/pull-down-refresh",
-    "contest-card":"/components/contest_card/contest_card"
+    "contest-card":"/components/contest_card/contest_card",
+    "contest-list":"/components/contest_list/contest_list",
+    "h-scroll-contest-list":"/components/horizontal_contest_list/horizontal_contest_list"
   }
   
 

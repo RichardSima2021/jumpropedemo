@@ -1,0 +1,5 @@
+/* components/horizontal_contest_list/horizontal_contest_list.wxss */
+.contestCard{
+  width:50%;
+  height:50%;
+}

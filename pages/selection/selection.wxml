@@ -13,16 +13,20 @@
                 loadingProps="{{loadingProps}}"
                 loadingTexts="{{['下拉刷新', '松手刷新', '正在刷新', '刷新完成']}}"
                 bind:refresh="onRefresh"
-                >
-            <scroll-view id="eventsView">
-                <text class="comps">所有比赛</text>
+            >
+              <text class="comps">所有比赛</text>
+
+                <h-scroll-contest-list>
+                  
+                </h-scroll-contest-list>
                 <!-- <contest-card eventTitle="test" eventDate="testDate"></contest-card> -->
                 <contest-card wx:for="{{eventsCache}}" wx:for-item="itemName" eventTitle="{{itemName.eventName}}" eventDate="{{itemName.date}}"></contest-card>
-                
+                <!-- <contest-list readEventList="{{fakeDB}}">
+                </contest-list> -->
+
                 <view wx:if="{{noMoreContent}}">
-                    <t-divider content="没有更多了" />
+                  <t-divider content="没有更多了" />
                 </view>
-            </scroll-view>
             </t-pull-down-refresh>
         
 

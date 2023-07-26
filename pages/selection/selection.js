@@ -46,20 +46,24 @@ Page({
     },
     onRefresh(){
         this.setData({enable:true});
-        setTimeout(()=> {this.setData({enable:false});},1500)
+        setTimeout(()=> {this.setData({enable:false});},1500);
+        // this.setData({})
+        // this.loadMoreElements();
     },
     onReachBottom(){
-        console.log("bottom");
+        // console.log(this);
         this.loadMoreElements();
     },
     onShow(){
         this.loadMoreElements();
+        // console.log("loaded elements");
     },
     loadMoreElements(){
         if(!this.data.noMoreContent){
             let currentEventCacheSize = Object.keys(this.data.eventsCache).length;
             let dbEventListSize = Object.keys(this.data.fakeDB).length;
             let numMoreElements = dbEventListSize - currentEventCacheSize;
+            // console.log(numMoreElements);
             if(numMoreElements > this.data.defaultEventListSize){
                 numMoreElements = this.data.defaultEventListSize;
             } else{

@@ -1,0 +1,4 @@
+<!--components/horizontal_contest_list/horizontal_contest_list.wxml-->
+<contest-card class="contestCard" eventTitle="test1" eventDate="test2">
+
+</contest-card>
