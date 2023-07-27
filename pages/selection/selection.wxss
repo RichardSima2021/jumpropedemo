@@ -68,5 +68,5 @@
 .scroll-view-item_H{
   display: inline-block;
   height: 200rpx;
-  padding: 20rpx;
+  margin: 20rpx;
 }
