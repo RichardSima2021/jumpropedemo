@@ -1,0 +1,42 @@
+/* components/horizontal_scroll_contest_card/horizontal_scroll_contest_card.wxss */
+.contestCard{
+  background-color: #ececec;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contestDetails{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+
+.contestName{
+  padding-top:10rpx;
+  font-size:25rpx
+}
+
+.detailGroup{
+  display:flex;
+  flex-direction: column;
+}
+
+.displayScore{
+  font-size: 35rpx;
+  font-weight: 900;
+}
+
+.watchStream{
+  padding: 10rpx;
+  --td-button-extra-small-font-size: 18rpx;
+  --td-button-font-weight: 400;
+  --td-button-default-border-color: black;
+  --td-button-default-bg-color: white;
+  --td-button-extra-small-padding-horizontal: 22rpx;
+}
+
+.teamDisplay{
+
+}
+

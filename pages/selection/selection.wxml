@@ -14,11 +14,16 @@
                 loadingTexts="{{['下拉刷新', '松手刷新', '正在刷新', '刷新完成']}}"
                 bind:refresh="onRefresh"
             >
+
+              <scroll-view scroll-x style="width:100%; height:200rpx;">
+                  <view class="horizontalScroll">
+                    <ongoing-contest class="scroll-view-item_H" contestInfo="{{fakeContestData}}"></ongoing-contest>
+                    <ongoing-contest class="scroll-view-item_H" contestInfo="{{fakeContestData}}"></ongoing-contest>
+                  </view>
+              </scroll-view>
+
               <text class="comps">所有比赛</text>
 
-                <h-scroll-contest-list>
-                  
-                </h-scroll-contest-list>
                 <!-- <contest-card eventTitle="test" eventDate="testDate"></contest-card> -->
                 <contest-card wx:for="{{eventsCache}}" wx:for-item="itemName" eventTitle="{{itemName.eventName}}" eventDate="{{itemName.date}}"></contest-card>
                 <!-- <contest-list readEventList="{{fakeDB}}">

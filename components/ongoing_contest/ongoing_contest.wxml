@@ -1,0 +1,28 @@
+<!--components/horizontal_scroll_contest_card/horizontal_scroll_contest_card.wxml-->
+<view class="contestCard">
+    <view class="contestName">
+        <text>{{contestName}}</text>
+    </view>
+
+    <view class="contestDetails">
+        <view id="teamOne" class="detailGroup">
+            <t-icon name="user-circle"></t-icon>
+            <text class="teamName">{{teamOneName}}</text>
+        </view>
+
+        <view id="scoreAndStream" class="detailGroup">
+            <view class="displayScore">
+                <text>{{teamOneScore}} : {{teamTwoScore}}</text>
+            </view>
+            <view class="watchStream">
+                <t-button shape="round" size="extra-small">{{streamStatus}}</t-button>
+            </view>
+        </view>
+        
+        <view id="teamTwo" class="detailGroup">
+            <t-icon name="user-circle"></t-icon>
+            <text class="teamName">{{teamTwoName}}</text>
+        </view>
+    </view>
+    
+</view>

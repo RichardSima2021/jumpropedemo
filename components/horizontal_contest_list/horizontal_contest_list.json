@@ -1,6 +1,0 @@
-{
-    "component": true,
-    "usingComponents": {
-      "contest-card":"../contest_card/contest_card"
-    }
-}

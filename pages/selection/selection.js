@@ -28,7 +28,8 @@ Page({
         enable: false,
         loadingProps:{size:'50rpx'},
         noMoreContent: false,
-        defaultEventListSize: 4 // loads new events 4 at a time
+        defaultEventListSize: 4 /* loads new events 4 at a time */,
+        fakeContestData:'{"contestName":"TestContestName", "teamOneName":"teamOne", "teamTwoName":"teamTwo", "teamOneScore":6, "teamTwoScore":9}'
     },
     onTabsChange(e){
         navigatePage(e.detail.value);
