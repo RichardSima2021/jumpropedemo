@@ -15,7 +15,7 @@
                 bind:refresh="onRefresh"
             >
 
-              <scroll-view scroll-x style="width:100%; height:200rpx;">
+              <scroll-view scroll-x style="width:100%; height:200rpx;" enhanced>
                   <view class="horizontalScroll">
                     <ongoing-contest class="scroll-view-item_H" contestInfo="{{fakeContestData}}"></ongoing-contest>
                     <ongoing-contest class="scroll-view-item_H" contestInfo="{{fakeContestData}}"></ongoing-contest>

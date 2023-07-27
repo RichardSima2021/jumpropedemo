@@ -68,5 +68,13 @@
 .scroll-view-item_H{
   display: inline-block;
   height: 200rpx;
+  width: 464rpx;
   margin: 20rpx;
+}
+
+.scroll-view-item_H:first-child{
+  margin-left:36rpx;
+}
+.scroll-view-item_H:last-child{
+  margin-right: 36rpx;
 }
