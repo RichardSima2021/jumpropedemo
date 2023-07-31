@@ -19,6 +19,7 @@
                   <view class="horizontalScroll">
                     <ongoing-contest class="scroll-view-item_H" contestInfo="{{fakeContestData}}"></ongoing-contest>
                     <ongoing-contest class="scroll-view-item_H" contestInfo="{{fakeContestData}}"></ongoing-contest>
+                    <ongoing-contest class="scroll-view-item_H" contestInfo="{{fakeContestData}}"></ongoing-contest>
                   </view>
               </scroll-view>
 

@@ -4,6 +4,8 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  border-style: hidden;
+  border-radius: 10rpx;
 }
 
 .contestDetails{
@@ -36,7 +38,5 @@
   --td-button-extra-small-padding-horizontal: 22rpx;
 }
 
-.teamDisplay{
 
-}
 
