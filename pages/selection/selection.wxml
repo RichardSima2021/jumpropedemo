@@ -1,7 +1,7 @@
 <gradient-navbar title="未来运动场" id="navbar"></gradient-navbar>
 
 
-<view class="contentBox" throttle="{{false}}">
+<view class="content-box" throttle="{{false}}">
     <t-tabs class="custom-tabs" defaultValue="{{0}}" bind:change="onTabsChange">
         <t-tab-panel class="tab-text" label="跳绳" value="0">
             <t-pull-down-refresh value="{{enable}}" loadingProps="{{loadingProps}}" loadingTexts="{{['下拉刷新', '松手刷新', '正在刷新', '刷新完成']}}" bind:refresh="onRefresh">
@@ -15,7 +15,7 @@
                 <text class="comps">所有比赛</text>
 
                 <!-- <contest-card eventTitle="test" eventDate="testDate"></contest-card> -->
-                <contest-card wx:for="{{eventsCache}}" wx:for-item="itemName" eventTitle="{{itemName.eventName}}" eventDate="{{itemName.date}}"></contest-card>
+                <contest-card wx:for="{{eventsCache}}" wx:for-item="itemName" event-text__title="{{itemName.eventName}}" event-text__date="{{itemName.date}}"></contest-card>
                 <!-- <contest-list eventList="{{fakeDB}}">
                 </contest-list> -->
 

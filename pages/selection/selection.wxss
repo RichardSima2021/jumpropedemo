@@ -1,4 +1,4 @@
-.contentBox{
+.content-box{
     margin: 50rpx;
     border-style: solid;
     border-color: white;
@@ -15,14 +15,14 @@
   height:var(--td-tab-item-height, 50rpx) !important;
 }
 
-.eventTitle{
+.event-text__title{
     margin-left: 40rpx;
     /* margin-bottom: 5rpx; */
     font-size: 50rpx;
     height: 100rpx; 
 }
 
-.eventDate{
+.event-text__date{
     margin-left: 40rpx;
     font-size: 35rpx;
 }
@@ -53,9 +53,6 @@
     border-radius: 15rpx;
 }
 
-.contestList{
-  /* height:2000rpx; */
-}
 
 .horizontalScroll{
   width: 100%;

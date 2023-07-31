@@ -28,13 +28,8 @@ Component({
     },
     lifetimes:{
         attached(){
-            // console.log(this.properties.contestInfo);
-            // let contestInfoJson = JSON.parse(this.properties.contestInfo);
-            let contestName = this.properties.contest.contestName;
-            let teamOneName = this.properties.contest.teamOneName;
-            let teamTwoName = this.properties.contest.teamTwoName;
-            let teamOneScore = this.properties.contest.teamOneScore;
-            let teamTwoScore = this.properties.contest.teamTwoScore;
+            // console.log(this.properties.contest);
+            const {contestName, teamOneScore, teamTwoScore, teamOneName, teamTwoName} = this.properties.contest;
             this.setData({contestName, teamOneScore, teamTwoScore, teamOneName, teamTwoName});
         }
     }
