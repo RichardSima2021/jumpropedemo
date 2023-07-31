@@ -1,10 +1,11 @@
 // components/horizontal_scroll_contest_card/horizontal_scroll_contest_card.ts
+import {ContestInfo} from './types';
 Component({
     /**
      * Component properties
      */
     properties: {
-        contestInfo:String // this is JSON
+        contest:Object // this is JSON
     },
 
     /**
@@ -28,12 +29,12 @@ Component({
     lifetimes:{
         attached(){
             // console.log(this.properties.contestInfo);
-            let contestInfoJson = JSON.parse(this.properties.contestInfo);
-            let contestName = contestInfoJson.contestName;
-            let teamOneName = contestInfoJson.teamOneName;
-            let teamTwoName = contestInfoJson.teamTwoName;
-            let teamOneScore = contestInfoJson.teamOneScore;
-            let teamTwoScore = contestInfoJson.teamTwoScore;
+            // let contestInfoJson = JSON.parse(this.properties.contestInfo);
+            let contestName = this.properties.contest.contestName;
+            let teamOneName = this.properties.contest.teamOneName;
+            let teamTwoName = this.properties.contest.teamTwoName;
+            let teamOneScore = this.properties.contest.teamOneScore;
+            let teamTwoScore = this.properties.contest.teamTwoScore;
             this.setData({contestName, teamOneScore, teamTwoScore, teamOneName, teamTwoName});
         }
     }

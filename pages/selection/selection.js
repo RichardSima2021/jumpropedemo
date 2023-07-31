@@ -1,3 +1,5 @@
+import {ContestInfo} from '../../components/ongoing_contest/types'
+
 function navigatePage(page){
   if(page == 0){
     console.log("jumprope");
@@ -29,7 +31,7 @@ Page({
         loadingProps:{size:'50rpx'},
         noMoreContent: false,
         defaultEventListSize: 4 /* loads new events 4 at a time */,
-        fakeContestData:'{"contestName":"TestContestName", "teamOneName":"teamOne", "teamTwoName":"teamTwo", "teamOneScore":6, "teamTwoScore":9}'
+        testContestData: {contestName:"TestContestName", teamOneScore:6, teamTwoScore:9, teamOneName:"teamOne", teamTwoName:"teamTwo"}
     },
     onTabsChange(e){
         navigatePage(e.detail.value);
@@ -52,7 +54,7 @@ Page({
         // this.loadMoreElements();
     },
     onReachBottom(){
-        // console.log(this);
+        // console.log("Reached bottom");
         this.loadMoreElements();
     },
     onShow(){

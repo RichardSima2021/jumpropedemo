@@ -1,6 +1,6 @@
 <!--components/contest_list/contest_list.wxml-->
 <scroll-view class="contestList" style="height: 1500rpx;" bindscrolltolower="onScrollToBottom">
-  <contest-card wx:for="{{readEventList}}" wx:for-item="itemName" eventTitle="{{itemName.eventName}}" eventDate="{{itemName.date}}"></contest-card>
+  <contest-card wx:for="{{eventList}}" wx:for-item="itemName" eventTitle="{{itemName.eventName}}" eventDate="{{itemName.date}}"></contest-card>
 
   
 </scroll-view>

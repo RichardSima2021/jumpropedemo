@@ -4,7 +4,7 @@ Component({
      * Component properties
      */
     properties: {
-        readEventList: Array
+        eventList: Array
     },
 
     /**
